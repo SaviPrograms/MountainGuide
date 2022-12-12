@@ -1,0 +1,37 @@
+body {
+    position: fixed;
+    inset: 0;
+
+    background-color: var(--bg-color);
+}
+
+img {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 60%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+article {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 60%;
+    height: 100%;
+
+    text-align: right;
+
+    padding: 3rem;
+    padding-left: 25vw;
+
+    background-color: linear-gradient(270deg, #01629C 32.81%, rgba(2, 65, 123, 0) 100%);
+}
+
+h1 {
+    margin-top: 0;
+}
