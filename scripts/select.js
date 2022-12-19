@@ -7,6 +7,7 @@ class Page {
 const pages = [
   new Page("Mt. Everest", "./kosciuszko.html"),
   new Page("Mt. Blanc", "./elo.html"),
+  new Page("Mt. Fuji", "./fuji.html"),
 ];
 
 const overlay = document.querySelector(".overlay");

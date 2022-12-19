@@ -112,4 +112,8 @@ a:hover {
 
         background: linear-gradient(0deg, var(--bg-color) 35%, transparent 100%);
     }
+
+    select {
+        width: 50vw;
+    }
 }
