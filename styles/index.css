@@ -6,24 +6,39 @@ body {
     margin-left: 0;
     font-size: 18px;
     font-family: Comfortaa;
+    background-image: radial-gradient(52.08% 59.29% at 91.82% 15.77%, transparent 31.25%, #131812 100%), url('../assets/images/tlo.jpg');;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
 }
         #images
         {
+           position:absolute;
             display:grid;
             grid-template-columns: 1fr 1fr 1fr;
-        }
-        #background 
-        {
-            inset: 0;
-            position:absolute;
-            object-fit: cover;
-        }
-        .content {
-            position: absolute;
             left: 0;
-            background: radial-gradient(52.08% 59.29% at 91.82% 15.77%, transparent 31.25%, #131812 100%);
             top: 0;
             z-index: 100;
             width: 100%;
             min-height: 100vh;
+        }
+        #images img 
+        {
+            width: 30vw;
+            padding-left: 3vw;
+           
+
+        }
+        #background 
+        {
+            /* inset: 0;
+            position:absolute;
+            object-fit: cover; */
+          
+        }
+        .content {
+            position: absolute;
+            
         }
