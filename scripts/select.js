@@ -5,9 +5,12 @@ class Page {
   }
 }
 const pages = [
-  new Page("Mt. Everest", "./kosciuszko.html"),
-  new Page("Mt. Blanc", "./elo.html"),
+  new Page("Denali", "./denali.html"),
+  new Page("Pico de Orizaba", "./orizaba.html"),
   new Page("Mt. Fuji", "./fuji.html"),
+  new Page("Mt. Ararat", "./ararat.html"),
+  new Page("Mt. Kilimanjaro", "./kilimanjaro.html"),
+  new Page("Mt. Kosciuszko", "./kosciuszko.html"),
 ];
 
 const overlay = document.querySelector(".overlay");
