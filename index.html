@@ -1,30 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./styles/index.css">
-    <title>Main page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700"
+      rel="stylesheet"
+    />
     <style>
-        
+      :root {
+        --bg-color: #131812;
+        --txt-color-1: #526d4d;
+        --txt-color-2: #b2a486;
+      }
     </style>
-</head>
-<body>
-    <!-- <img id="background" src="./assets/images/tlo.jpg" alt="tło"> -->
-    <div class="content">
-        
-        <section class="costam">
-            
-        </section>
-        <section class="zdjecia">
-        <div id="images">
-            <img src="./assets/images/Denali.webp" alt="gura w japoni">
-            <img src="./assets/images/Denali.webp" alt="gura w japoni">
-            <img src="./assets/images/denali.webp" alt="gura w japoni">
-            <img src="./assets/images/fuji.webp" alt="gura w japoni">
-            <img src="./assets/images/fuji.webp" alt="gura w japoni">
-            <img src="./assets/images/fuji.webp" alt="gura w japoni">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <script src="./scripts/article.js" defer></script>
+
+    <title>Main page</title>
+  </head>
+  <body>
+    <div class="goverlay"></div>
+    <main>
+      <section class="hero">
+        <h1>Mountain Guide</h1>
+        <p>It's first place to get</p>
+      </section>
+      <section class="photos">
+        <div class="tile" onclick="relocate('./subpages/orizaba.html')">
+          <div class="overlay">Orizaba</div>
+          <img src="./assets/images/orizaba.webp" alt="" />
         </div>
-    </section> 
-    </div>
-</body>
+        <div class="tile" onclick="relocate('./subpages/ararat.html')">
+          <div class="overlay">Mt. Ararat</div>
+          <img src="./assets/images/ararat.jpg" alt="" />
+        </div>
+        <div class="tile" onclick="relocate('./subpages/denali.html')">
+          <div class="overlay">Denali<br />Mt. McKanly</div>
+          <img src="./assets/images/denali.jpg" alt="" />
+        </div>
+        <div class="tile" onclick="relocate('./subpages/fuji.html')">
+          <div class="overlay">Mt. Fuji</div>
+          <img src="./assets/images/fuji.webp" alt="" />
+        </div>
+        <div class="tile" onclick="relocate('./subpages/kilimanjaro.html')">
+          <div class="overlay">Mt. Kilimanjaro</div>
+          <img src="./assets/images/kilimanjaro.webp" alt="" />
+        </div>
+        <div class="tile" onclick="relocate('./subpages/kosciuszko.html')">
+          <div class="overlay">Mt. Kosciuszko</div>
+          <img src="./assets/images/kosciuszko.webp" alt="" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      Created by <a href="#">Kacper Pawłowski</a> &
+      <a href="https://github.com/SaviProgram">Seweryn Woliński</a>
+    </footer>
+  </body>
 </html>

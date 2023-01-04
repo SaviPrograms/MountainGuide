@@ -1,34 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-
-@font-face {
-    font-family: 'Soft Line';
-    src: url(../assets/fonts/SoftLine.otf);
-}
-
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+
+    font-size: 18px;
+    font-family: Comfortaa;
+
+    background-color: black;
 }
 
-.overlay {
+.goverlay {
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 10000;
+    z-index: 15;
 
     pointer-events: none;
 
-    animation: forwards 1s fadeOut;
+    animation: forwards 3s fadeOut;
 }
 
-.overlay.loading {
+.goverlay.loading {
     animation: forwards 1s fadeIn;
 }
 

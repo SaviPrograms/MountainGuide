@@ -1,22 +1,32 @@
 body {
     position: fixed;
-    inset: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 
-    background-color: var(--bg-color);
-
-    font-size: 18px;
-    font-family: Comfortaa;
 }
 
-select {
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
     position: absolute;
     left: 3rem;
     top: 3rem;
 
-    z-index: 100;
+    z-index: 1;
 
-    width: 20vw;
     height: 2rem;
+
+    color: var(--txt-color-2);
+
+}
+
+select {
+    width: 20vw;
+    height: 100%;
 
     background-color: transparent;
     color: var(--txt-color-2);
@@ -61,7 +71,7 @@ h1 {
 
     font-family: QuickSand;
     font-size: 5rem;
-    font-weight: 100;
+    font-weight: 1;
 }
 
 p {
@@ -116,4 +126,14 @@ a:hover {
     select {
         width: 50vw;
     }
+}
+
+.back {
+    color: var(--txt-color-2);
+
+    transition: all 250ms;
+}
+
+.back:hover {
+    color: var(--txt-color-1);
 }

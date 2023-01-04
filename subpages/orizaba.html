@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gora | MountainGuide</title>
 
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link href="../styles/fonts.css" rel="stylesheet" />
 
     <style>
       :root {
@@ -18,15 +18,21 @@
       }
     </style>
 
+    <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/article.css" />
 
-    <script src="../scripts/select.js" defer></script>
+    <script src="../scripts/article.js" defer></script>
   </head>
 
   <body>
-    <select name="" id="" data-id="1">
-      <option value="">Góra 1</option>
-    </select>
+    <nav>
+      <i
+        class="material-symbols-rounded back"
+        onclick="relocate('../index.html')"
+        >arrow_back</i
+      >
+      <select name="" id="" data-id="1"></select>
+    </nav>
     <img src="../assets/images/gora.webp" alt="" />
     <article>
       <h1>Mt. Everest</h1>
@@ -42,6 +48,6 @@
       </p>
     </article>
     <footer>Image from <a href="#">Blah blah blah</a></footer>
-    <div class="overlay"></div>
+    <div class="goverlay"></div>
   </body>
 </html>

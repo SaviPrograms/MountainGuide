@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mt. Kosciuszko | MountainGuide</title>
 
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,300,0,-25"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700"
+      rel="stylesheet"
+    />
 
     <style>
       :root {
@@ -16,17 +27,22 @@
       }
     </style>
 
+    <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/article.css" />
 
-    <script src="../scripts/select.js" defer></script>
+    <script src="../scripts/article.js" defer></script>
   </head>
 
   <body>
-    <select name="" id="" data-id="5"></select>
-    <img
-      src="https://images.rove.me/w_1920,q_85/ojvbzkdqbxrolntspmx7/new-south-wales-climbing-mount-kosciuszko.jpg"
-      alt=""
-    />
+    <nav>
+      <i
+        class="material-symbols-rounded back"
+        onclick="relocate('../index.html')"
+        >arrow_back</i
+      >
+      <select name="" id="" data-id="5"></select>
+    </nav>
+    <img src="../assets/images/kosciuszko.webp" alt="" />
     <article>
       <h1>Mount Kosciuszko</h1>
       <p class="desc">
@@ -41,6 +57,6 @@
         >Rove.me</a
       >
     </footer>
-    <div class="overlay"></div>
+    <div class="goverlay"></div>
   </body>
 </html>

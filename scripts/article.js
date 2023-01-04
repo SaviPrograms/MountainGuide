@@ -13,8 +13,17 @@ const pages = [
   new Page("Mt. Kosciuszko", "./kosciuszko.html"),
 ];
 
-const overlay = document.querySelector(".overlay");
 const select = document.querySelector("select");
+
+const overlay = document.querySelector(".goverlay");
+
+function relocate(path) {
+  overlay.classList.add("loading");
+  overlay.addEventListener("animationend", (animationEvent) => {
+    if (animationEvent.animationName != "fadeIn") return;
+    location.assign(path);
+  });
+}
 
 for (const [i, page] of Object.entries(pages)) {
   select[i] = new Option(
@@ -26,9 +35,5 @@ for (const [i, page] of Object.entries(pages)) {
 }
 
 select.addEventListener("change", (event) => {
-  overlay.classList.add("loading");
-  overlay.addEventListener("animationend", (animationEvent) => {
-    if (animationEvent.animationName != "fadeIn") return;
-    location.assign(event.target.value);
-  });
+  relocate(event.target.value);
 });
