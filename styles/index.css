@@ -41,6 +41,8 @@ footer a:hover {
     color: var(--txt-color-2);
 
     font-size: 1.2rem;
+
+    line-height: 1.5;
 }
 
 .hero h1 {
