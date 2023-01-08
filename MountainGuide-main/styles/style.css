@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-size: 18px;
+    font-family: Comfortaa;
+
+    background-color: black;
+}
+
+.goverlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 15;
+
+    pointer-events: none;
+
+    animation: forwards 3s fadeOut;
+}
+
+.goverlay.loading {
+    animation: forwards 1s fadeIn;
+}
+
+@keyframes fadeOut {
+    0% {
+        background-color: #000;
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes fadeIn {
+    100% {
+        background-color: #000;
+    }
+
+    0% {
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,120 @@
+body {
+    background-image: radial-gradient(75% 80% at top right, transparent 40%, var(--bg-color) 100%), url('../assets/images/tlo.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main {
+    overflow-y: auto;
+}
+
+footer {
+    position: relative;
+
+    text-align: right;
+    padding: 1rem 1.5rem;
+
+    color: #ffffff38;
+}
+
+footer a {
+    color: #ffffff55;
+    text-decoration: none;
+
+    transition: all .05s;
+}
+
+footer a:hover {
+    color: #3f94d955;
+
+    text-decoration: solid underline 1px;
+    text-underline-offset: 3px;
+}
+
+.hero {
+    height: 50vh;
+    width: 60vw;
+
+    padding: 2rem 4rem;
+
+    color: var(--txt-color-2);
+
+    font-size: 1.2rem;
+
+    line-height: 1.5;
+}
+
+.hero h1 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+
+    color: var(--txt-color-1);
+
+    margin: 0;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem .75rem;
+
+    justify-content: center;
+
+    width: 100%;
+
+    padding: 3rem;
+}
+
+.tile {
+    display: block;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.tile img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.tile .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    padding: 1rem;
+
+    background: linear-gradient(180deg, transparent 30%, var(--bg-color) 95%);
+    color: var(--txt-color-2);
+
+    opacity: 100%;
+
+    transition: all 750ms;
+
+    text-align: center;
+}
+
+.tile:hover .overlay {
+    opacity: 0%;
+}
+
+.goverlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    z-index: 1000;
+}
