@@ -1,71 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700"
-      rel="stylesheet"
-    />
-    <style>
-      :root {
-        --bg-color: #131812;
-        --txt-color-1: #526d4d;
-        --txt-color-2: #b2a486;
-      }
-    </style>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/index.css" />
 
-    <script src="./scripts/article.js" defer></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-color: #131812;
+      --txt-color-1: #526d4d;
+      --txt-color-2: #b2a486;
+    }
+  </style>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/index.css" />
 
-    <title>Main page</title>
-  </head>
-  <body>
-    <div class="goverlay"></div>
-    <main>
-      <section class="hero">
-        <h1>Mountain Guide</h1>
-        <p>
-          Discover the beauty of mountain peaks from around the world on our
-          website. From the Rocky Mountains to the Alps, explore stunning
-          visuals and find information about each peak. Relax and enjoy the
-          peacefulness of these natural landscapes.
-        </p>
-      </section>
-      <section class="photos">
-        <div class="tile" onclick="relocate('./subpages/orizaba.html')">
-          <div class="overlay">Orizaba</div>
-          <img src="./assets/images/orizaba.jpg" alt="" />
-        </div>
-        <div class="tile" onclick="relocate('./subpages/ararat.html')">
-          <div class="overlay">Mt. Ararat</div>
-          <img src="./assets/images/ararat.jpg" alt="" />
-        </div>
-        <div class="tile" onclick="relocate('./subpages/denali.html')">
-          <div class="overlay">Denali<br />Mt. McKanly</div>
-          <img src="./assets/images/denali.jpg" alt="" />
-        </div>
-        <div class="tile" onclick="relocate('./subpages/fuji.html')">
-          <div class="overlay">Mt. Fuji</div>
-          <img src="./assets/images/fuji.webp" alt="" />
-        </div>
-        <div class="tile" onclick="relocate('./subpages/kilimanjaro.html')">
-          <div class="overlay">Mt. Kilimanjaro</div>
-          <img src="./assets/images/kilimanjaro.webp" alt="" />
-        </div>
-        <div class="tile" onclick="relocate('./subpages/kosciuszko.html')">
-          <div class="overlay">Mt. Kosciuszko</div>
-          <img src="./assets/images/kosciuszko.webp" alt="" />
-        </div>
-      </section>
-    </main>
-    <footer>
-      Created by <a href="#">Kacper Pawłowski</a> &
-      <a href="https://github.com/SaviProgram">Seweryn Woliński</a>
-    </footer>
-  </body>
+  <script src="./scripts/article.js" defer></script>
+
+  <title>Main page</title>
+</head>
+
+<body>
+  <div class="goverlay"></div>
+  <main>
+    <section class="hero">
+      <h1>Mountain Guide</h1>
+      <p>
+        Discover the beauty of mountain peaks from around the world on our
+        website. From the Rocky Mountains to the Alps, explore stunning
+        visuals and find information about each peak. Relax and enjoy the
+        peacefulness of these natural landscapes.
+      </p>
+    </section>
+    <section class="photos">
+      <div class="tile" onclick="relocate('./subpages/orizaba.html')">
+        <div class="overlay">Orizaba</div>
+        <img src="./assets/images/orizaba.jpg" alt="" />
+      </div>
+      <div class="tile" onclick="relocate('./subpages/ararat.html')">
+        <div class="overlay">Mt. Ararat</div>
+        <img src="./assets/images/ararat.jpg" alt="" />
+      </div>
+      <div class="tile" onclick="relocate('./subpages/denali.html')">
+        <div class="overlay">Denali<br />Mt. McKanly</div>
+        <img src="./assets/images/denali.jpg" alt="" />
+      </div>
+      <div class="tile" onclick="relocate('./subpages/fuji.html')">
+        <div class="overlay">Mt. Fuji</div>
+        <img src="./assets/images/fuji.webp" alt="" />
+      </div>
+      <div class="tile" onclick="relocate('./subpages/kilimanjaro.html')">
+        <div class="overlay">Mt. Kilimanjaro</div>
+        <img src="./assets/images/kilimanjaro.webp" alt="" />
+      </div>
+      <div class="tile" onclick="relocate('./subpages/kosciuszko.html')">
+        <div class="overlay">Mt. Kosciuszko</div>
+        <img src="./assets/images/kosciuszko.webp" alt="" />
+      </div>
+    </section>
+  </main>
+  <footer>
+    Created by <a href="#">Kacper Pawłowski</a> &
+    <a href="https://github.com/SaviProgram">Seweryn Woliński</a>
+  </footer>
+</body>
+
 </html>

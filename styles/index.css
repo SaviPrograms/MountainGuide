@@ -33,10 +33,10 @@ footer a:hover {
 }
 
 .hero {
-    height: 50vh;
+
     width: 60vw;
 
-    padding: 2rem 4rem;
+    padding: 8rem 4rem;
 
     color: var(--txt-color-2);
 
@@ -66,6 +66,21 @@ footer a:hover {
     width: 100%;
 
     padding: 3rem;
+}
+
+
+@media (max-width: 600px) {
+    .hero {
+        width: 100%;
+        text-align: center;
+
+        padding: 2rem 2rem;
+
+    }
+
+    .photos {
+        grid-template-columns: 1fr;
+    }
 }
 
 .tile {
