@@ -69,7 +69,7 @@ footer a:hover {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .hero {
         width: 100%;
         text-align: center;
